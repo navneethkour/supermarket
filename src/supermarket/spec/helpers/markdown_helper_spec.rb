@@ -13,7 +13,7 @@ describe MarkdownHelper do
         ```
       EOH
 
-      expect(helper.render_markdown(codeblock)).to match(/<pre><code class="sh">/)
+      expect(helper.render_markdown(codeblock)).to match(/<pre lang="sh"><code>/)
     end
 
     it 'auto renders links with target blank' do
